@@ -1,0 +1,671 @@
+.form-pedidos{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.grid-label{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-botones{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#sectionContacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    width: 80%;
+    background: rgba(255, 255, 255, 0.493);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 7%;
+}
+
+.container h1{
+    color: #444;
+}
+
+.search-title {
+    text-align: center;
+    width: 100%;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.form-control{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+
+}
+
+.botn {
+    display: flex;
+    margin-top: 20px;
+}
+
+#form .botonescontacto {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    grid-column: span 2;
+}
+
+.lista-pedidos {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    justify-items: center;
+    text-align: center;
+}
+
+/*-- ↓Main Contacto↓ -----------------------------------------------------------------*/
+.centrar_texto {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+/* Estilo de form-contacto */
+#contenedor_formulario {
+    display: flex;
+    justify-content: center;
+    padding: 50px 55px;
+}
+
+.form {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    background: #91745da5;
+    width: 480px;
+    width: 340px;
+    padding: 50px 55px;
+    box-shadow: 0 0 20px #444;
+    border-radius: 10px;
+}
+
+#sectionContacto {
+    background-image: url(../Imagenes/Fondo-contacto.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.textcontacto {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    color: var();
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+input {
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    border: 1.5px solid #cacaca;
+    outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #cacaca;
+}
+
+.form div {
+    margin: 20px;
+}
+
+.completa {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: #cacaca;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    border: 1.5px solid #cacaca;
+    outline: none;
+}
+
+.botonescontacto {
+    background-color: #cacaca;
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+
+.contenedor_animacion p {
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    width: auto;
+    min-width: 100%;
+    height: fit-content;
+    vertical-align: middle;
+    margin-right: 1.5rem;
+    animation: desplazamiento 20s linear infinite;
+}
+
+.sexo input{
+    
+   margin-right: 20px;
+   margin-left: 0px;
+}
+
+@keyframes desplazamiento {
+    0% {
+        transform: translateX(0%);
+        /* Desplazamiento inicial */
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+
+}
+
+.animacion {
+    line-height: 3.5px;
+    background-color: rgb(53, 53, 53);
+}
+
+.contenedor_animacion {
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+    position: relative;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    background: rgba(0, 0, 0, 0.6);
+    width: 480px;
+    padding: 30px 35px;
+    box-shadow: 0 0 20px #444;
+    border-radius: 10px;
+}
+/*-- ↑Main Contacto↑ -----------------------------------------------------------------*/
+
+/* --↓Main Tienda↓-----------------------------------------------------------------------------*/
+.categoria {
+    padding: 20px;
+    background-color: #eeeeee transparent;
+    text-align: center;
+    height: 30px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.sin-baulera, .con-baulera , .sillones, .mesas, .escritorios {
+    background-image: url(../Imagenes/rocky-120-ropa.png);
+    background-size: cover;
+    margin: 5px;
+}
+
+
+.categoria p {
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px auto;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.placard {
+    display: inline-block;
+    justify-content: center;
+    height: 0px;
+    width: 200px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.descripcion-placard {
+    background-color: #cacaca;
+    border-radius: 0 0 20px 20px;
+    padding: 10px;
+}
+
+/* Placares sin baulera */
+.imagen {
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    border-radius: 20px 20px 0 0;
+}
+
+.imga {
+    background-image: url(../Imagenes/rocky-120-ropa.png);
+}
+
+.imgb {
+    background-image: url(../Imagenes/rocky-180-ropa.png);
+}
+
+.imgc {
+    background-image: url(../Imagenes/rocky-240-ropa.png);
+}
+
+.imgaa {
+    background-image: url(../Imagenes/1-Rocky-Baul-120-cosas.jpeg);
+}
+
+.imgbb {
+    background-image: url(../Imagenes/10-Rocky-Baul-180-cosas.jpeg);
+}
+
+.imgcc {
+    background-image: url(../Imagenes/16-Rocky-Baul-240-cosas.jpeg);
+}
+
+.imgsillon1 {
+    background-image: url(https://images.unsplash.com/photo-1579656381229-15bdb188da49?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.imgsillon2 {
+    background-image: url(https://images.unsplash.com/photo-1604061986761-d9d0cc41b0d1?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.imgsillon3 {
+    background-image: url(https://images.unsplash.com/photo-1601366533287-5ee4c763ae4e?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.imgmesa1 {
+    background-image: url(https://images.unsplash.com/photo-1615803796379-b4cda8e9c09c?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.imgmesa2 {
+    background-image: url(https://images.unsplash.com/photo-1601740468950-00fc402e926e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.imgmesa3 {
+    background-image: url(https://images.unsplash.com/photo-1616362348473-c767bf9eb473?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+.imgescritorio1 {
+    background-image: url(../Imagenes/Escritorio1.jpg);
+}
+.imgescritorio2 {
+    background-image: url(../Imagenes/Escritorio2.jpg);
+}
+.imgescritorio3 {
+    background-image: url(../Imagenes/Escritorio3.jpg);
+}
+
+.categoria:hover {
+    height: 340px;
+    transition: 0.5s ease;
+    background-color: #eeeeee;
+
+    .articulos {
+        height: auto;
+        transition: 0.5s ease;
+    }
+
+    .placard {
+        margin-top: 20px;
+        height: 200px;
+        transition: 0.5s ease;
+    }
+}
+/* --↑Main Tienda↑-----------------------------------------------------------------------------*/
+
+/*-- ↓Main Acerca de↓ -----------------------------------------------------------------*/
+.acerca-de {
+    padding: 20px;
+}
+.div-acerca-de {
+    margin: 0 0 10px 0;
+    background-color: #eeeeee transparent;
+    height: 70px;
+    overflow: hidden;
+    border: 1px solid;
+    transition: 0.5s;
+}
+
+.qs {
+    /* Gradiente blanco de izquierda a derecha */
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 100%),
+        /* Imagen de fondo centrada y cubriendo la mitad derecha */
+        url('../Imagenes/Imagenes-Acerca-De/Quienes-somos.jpg') no-repeat;
+    background-size: cover;
+    /* Ajusta el tamaño de la imagen para cubrir el contenedor */
+    background-position: 160px -170px;
+    /* Posiciona la imagen */
+}
+
+.ct {
+    /* Gradiente blanco de izquierda a derecha */
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 100%),
+        /* Imagen de fondo centrada y cubriendo la mitad derecha */
+        url('../Imagenes/Imagenes-Acerca-De/como-trabajamos.jpg') no-repeat;
+    background-size: cover;
+    /* Ajusta el tamaño de la imagen para cubrir el contenedor */
+    background-position: 160px -170px;
+    /* Posiciona la imagen */
+}
+
+.en{
+        /* Gradiente blanco de izquierda a derecha */
+        background: linear-gradient(to right, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 100%),
+        /* Imagen de fondo centrada y cubriendo la mitad derecha */
+        url('../Imagenes/Imagenes-Acerca-De/envios.jpg') no-repeat;
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
+    background-position: 160px -170px; /* Posiciona la imagen */
+}
+
+.fp{
+        /* Gradiente blanco de izquierda a derecha */
+        background: linear-gradient(to right, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 100%),
+        /* Imagen de fondo centrada y cubriendo la mitad derecha */
+        url('../Imagenes/Imagenes-Acerca-De/formas-de-pago.jpg') no-repeat;
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
+    background-position: 160px -100px; /* Posiciona la imagen */
+}
+
+.tr{
+        /* Gradiente blanco de izquierda a derecha */
+        background: linear-gradient(to right, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 100%),
+        /* Imagen de fondo centrada y cubriendo la mitad derecha */
+        url('../Imagenes/Imagenes-Acerca-De/trayectoria.png') no-repeat;
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
+    background-position: 160px -100px; /* Posiciona la imagen */
+}
+
+.div-acerca-de h2 {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    margin: auto auto auto 10px;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.div-acerca-de p{
+    padding: 20px;
+}
+
+.div-acerca-de:hover{
+    height: 200px;
+}
+
+/*-- ↑Main Acerca de↑ -----------------------------------------------------------------*
+/*-- ↓Main INDEX -----------------------------------------------------------------*/
+
+/*  primer seccion */
+
+.primer-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../Imagenes/fondo-primer-section.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 60%;
+    padding: 4%;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 3%;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 3.5em;
+    margin-bottom: 0.2em;
+}
+
+.subtexto {
+    font-size: 2em;
+    margin-bottom: 0.2em;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #ff6347;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.boton:hover {
+    background-color: #ff4500;
+}
+
+/*ajustar en diferentes tamaños de pantalla */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .subtexto {
+        font-size: 1em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .boton {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .subtexto {
+        font-size: 0.9em;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
+    .boton {
+        font-size: 0.8em;
+        padding: 6px 12px;
+    }
+}
+
+/* Medios de pago */
+
+.cartel {
+    background:url(https://images.unsplash.com/photo-1589758438368-0ad531db3366?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.medios-pago {
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.80);
+    max-width: 60%;
+    margin: 20px;
+}
+
+/* ofertas */
+
+#titulo-ofertas {
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    color: #ecf0f1;
+    font-size: 2.6em;
+}
+
+#ofertas {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../Imagenes/fondo-madera-clara.jpg') no-repeat center center/cover;
+    padding: 10px 10px 10px 10px;
+}
+
+.container-ofertas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+    justify-content: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    padding: 2%;
+    margin: 1%;
+}
+
+.oferta {
+    background: rgba(0, 0, 0, 0.6);
+    margin: 0.5%;
+    padding: 2%;
+    border-radius: 5%;
+}
+
+.oferta img {
+    width: 15em;
+    height: 15em;
+    border-radius: 5%;
+    object-fit: cover;
+    transition: all 2s;
+    padding-top: 0.5%;
+}
+
+.oferta figure {
+    overflow: hidden;
+}
+
+.oferta:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.oferta:hover img {
+    transform: scale(1.2);
+}
+
+.info-oferta {
+    color: aliceblue;
+    padding-top: 0;
+    padding-left: 5%;
+}
+
+.info-oferta p {
+    display: flex;
+    font-size: 90%;
+}
+
+/* mapa- modificado */
+
+.iframe-titulo {
+    padding: 0.25%;
+    background: linear-gradient(45deg, #757978, #BDB6B1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    color:#ecf0f1;
+    font-size: 1.3em;
+}
+
+.iframe-container {
+    background: linear-gradient(45deg, #757978, #BDB6B1);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 55px;
+}
+
+.iframe-container iframe {
+    min-width: 50%;
+    min-height: 50%;
+    max-width: 100%;
+    max-height: 100%;
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+/*-- banner INDEX -----------------------------------------------------------------*/
+
+.bannerfabricantes img {
+    min-width: 50%;
+    min-height: 50%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*-- banner INDEX -----------------------------------------------------------------*/

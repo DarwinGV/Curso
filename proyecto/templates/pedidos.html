@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="placares,melamina,muebles,online" />
+    <!-- Link para estilos -->
+    <link rel="stylesheet" href="../static/css/estilos-main.css">
+    <link rel="stylesheet" href="../static/css/estilos.css">
+    <link rel="icon" href="Imagenes/Favicom.png" type="image/png" />
+    <!-- Link para los iconos de las redes -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Fuentes de google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tienda Online M.C</title>
+  </head>
+
+  <body>
+    <!--header-------------------------------->
+    <header>
+      <div class="header-nav">
+        <img
+          class="imagen-header"
+          src="Imagenes/img-header.jpeg"
+          alt="Imagen de Placard"
+        />
+        <h2 id="asociados">Asociados y Fabricantes M.C</h2>
+        <nav>
+          <a href="Pedidos.html">Pedidos</a>
+          <a href="contacto.html">Contacto</a>
+          <a href="acerca-de.html">Acerca de</a>
+          <a href="tienda.html">Tienda</a>
+          <a href="index.html">Inicio</a>
+        </nav>
+      </div>
+      <div class="contenedor_animacion">
+        <div class="animacion">
+          <p>ENVIOS A TODO EL PAIS</p>
+          <p>3 CUOTAS SIN INTERÉS</p>
+        </div>
+      </div>
+    </header>
+
+    <!--main-------------------------------->
+    <main>
+      <!--contenedor imagen de fondo-->
+      <section id="sectionContacto">
+        <!--contenedor form pedidos-->
+        <section id="form" class="container">
+          <h2 class="search-title">Formulario de pedidos</h2>
+          <form action="#" id="form-pedidos">
+            <div class="d-flex">
+              <div class="form-control d-flex-column">
+                <label class="label-pedidos" for="Nombre">Nombre</label>
+                <input
+                  type="text"
+                  class="input-search"
+                  name="Nombre"
+                  id="Nombre"
+                />
+              </div>
+              <div class="form-control d-flex-column">
+                <label class="label-pedidos" for="Apellido">Apellido</label>
+                <input
+                  type="text"
+                  class="input-search"
+                  name="Apellido"
+                  id="Apellido"
+                />
+              </div>
+              <div class="form-control d-flex-column">
+                <label class="label-pedidos" for="email">Email</label>
+                <input
+                  type="text"
+                  class="input-search"
+                  name="email"
+                  id="email"
+                />
+              </div>
+              <div class="form-control d-flex-column">
+                <label class="label-pedidos" for="Mueble">Mueble</label>
+                <input
+                  type="text"
+                  class="input-search"
+                  name="Mueble"
+                  id="Mueble"
+                />
+              </div>
+              <div class="form-control d-flex-column">
+                <label class="label-pedidos" for="fecha_entrega"
+                  >Fecha de entrega estimada</label
+                >
+                <input
+                  type="date"
+                  class="input-search"
+                  name="fecha_entrega"
+                  id="fecha_entrega"
+                />
+              </div>
+              <div class="form-control d-flex-column">
+                <label for="Color">Color</label>
+                <input
+                  type="text"
+                  class="input-search"
+                  name="Color"
+                  id="Color"
+                />
+              </div>
+            </div>
+            <input type="hidden" name="id" id="id_pedido" />
+            <div class="botn">
+              <button class="botonescontacto" type="button" id="agregar-pedido">
+                Agregar
+              </button>
+              <button
+                class="botonescontacto"
+                type="button"
+                id="actualizar-pedido"
+              >
+                Actualizar
+              </button>
+              <button
+                class="botonescontacto"
+                type="button"
+                id="eliminar-pedido"
+              >
+                Eliminar
+              </button>
+            </div>
+          </form>
+        </section>
+
+        <section id="list" class="container">
+          <h3 class="subtitle">Lista de pedidos</h3>
+          <table id="listado-pedidos" class="table">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Mueble</th>
+                <th>Fecha de entrega estimada</th>
+                <th>Color</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody id="tbody-pedidos"></tbody>
+          </table>
+        </section>
+      </section>
+    </main>
+
+    <!--footer-------------------------------->
+    <footer>
+      <div class="footer-barra"></div>
+      <div class="footer-container">
+        <div class="footer-info">
+          <h3>Información de contacto</h3>
+          <p>Dirección: Calle Falsa 123, Ciudad Ficticia</p>
+          <p>Teléfono: 555-123456</p>
+          <p>Email: tienda@tiendamichaelclimb.com</p>
+        </div>
+        <div class="footer-social">
+          <h3>Redes sociales</h3>
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-logo">
+          <img src="Imagenes/Logo.png" class="logo2" />
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Tienda Michael Climb. Todos los derechos reservados.</p>
+      </div>
+      <div class="footer-barra"></div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../static/js/MC_Muebles-fetch.js"></script>
+    <script src="../static/js/script.js" ></script>
+  </body>
+</html>

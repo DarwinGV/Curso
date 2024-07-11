@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="placares,melamina,muebles,online">
+    <!-- Link para estilos -->
+    <link rel="stylesheet" href="../static/css/estilos-main.css">
+    <link rel="stylesheet" href="../static/css/estilos.css">
+    <link rel="icon" href="Imagenes/Favicom.png" type="image/png">
+    <!-- Link para los iconos de las redes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Fuentes de google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+        <!-- Incluir SweetAlert2 y FontAwesome para los iconos -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <title>Tienda Online M.C</title>
+</head>
+
+<body>
+    <!--header-------------------------------->
+    <header>
+        <div class="header-nav">
+            <img class="imagen-header" src="Imagenes/img-header.jpeg" alt="Imagen de Placard">
+            <h2 id="asociados">Asociados y Fabricantes M.C</h2>
+            <nav>
+                <a href="contacto.html">Contacto</a>
+                <a href="acerca-de.html">Acerca de</a>
+                <a href="tienda.html">Tienda</a>
+                <a href="index.html">Inicio</a>
+            </nav>
+        </div>
+        <div class="contenedor_animacion">
+            <div class="animacion">
+                <p>ENVIOS A TODO EL PAIS</p>
+                <p>3 CUOTAS SIN INTERÉS</p>
+            </div>
+        </div>
+    </header>
+<body>
+
+  <div class="container">
+    <h1>Gestión de Pedidos</h1>
+    <!-- Formulario para agregar o actualizar pedidos -->
+    <form class="form-pedidos" id="form-pedidos">
+      <input type="hidden" id="id_pedido">
+      <div class="grid-label">
+        <label for="Nombre">Nombre:</label>
+        <input type="text" id="Nombre" required>
+      </div>
+      <div class="grid-label">
+        <label for="Apellido">Apellido:</label>
+        <input type="text" id="Apellido" required>
+      </div>
+      <div class="grid-label">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+      </div>
+      <div class="grid-label">
+        <label for="Mueble">Mueble:</label>
+        <input type="text" id="Mueble" required>
+      </div>
+      <div class="grid-label">
+        <label for="fecha_entrega">Fecha de Entrega:</label>
+        <input type="date" id="fecha_entrega" required>
+      </div>
+      <div class="grid-label">
+        <label for="Color">Color:</label>
+        <input type="text" id="Color" required>
+      </div>
+      <div class="grid-botones">
+        <button type="button" class="botonescontacto" id="agregar-pedido">Agregar Pedido</button>
+        <button type="button" class="botonescontacto" id="actualizar-pedido">Actualizar Pedido</button>
+        <button type="button" class="botonescontacto" id="eliminar-pedido">Eliminar Pedido</button>
+      </div>
+    </form>
+    <!-- Botón para eliminar un pedido -->
+    
+    <!-- Tabla para mostrar los pedidos -->
+    <table  id="listado-pedidos">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Email</th>
+          <th>Mueble</th>
+          <th>Fecha de Entrega</th>
+          <th>Color</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Los pedidos se insertarán aquí -->
+      </tbody>
+    </table>
+
+    <!--footer-------------------------------->
+    <footer>
+        <div class="footer-barra"></div>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Información de contacto</h3>
+                <p>Dirección: Calle Falsa 123, Ciudad Ficticia</p>
+                <p>Teléfono: 555-123456</p>
+                <p>Email: tienda@tiendamichaelclimb.com</p>
+            </div>
+            <div class="footer-social">
+                <h3>Redes sociales</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-logo">
+                <img src="Imagenes/Logo.png" class="logo2">
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Tienda Michael Climb. Todos los derechos reservados.</p>
+        </div>
+        <div class="footer-barra"></div>
+    </footer>
+    <script src="../static/js/MC_Muebles-fetch.js"></script>
+    <script src="../static/js/script.js"></script>
+</body>
+</html>
